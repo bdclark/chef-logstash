@@ -93,7 +93,7 @@ action :create do
     %w(bin etc lib log tmp etc/conf.d patterns).each do |ldir|
       r = directory "#{ls[:instance_dir]}/#{ldir}" do
         action :create
-        mode '0755'
+        mode '0775'
         owner ls[:user]
         group ls[:group]
       end
@@ -120,7 +120,7 @@ action :create do
     %w(bin etc lib log tmp etc/conf.d patterns).each do |ldir|
       r = directory "#{ls[:instance_dir]}/#{ldir}" do
         action :create
-        mode '0755'
+        mode '0775'
         owner ls[:user]
         group ls[:group]
       end
@@ -162,7 +162,7 @@ action :create do
     %w(bin etc lib log tmp etc/conf.d patterns).each do |ldir|
       r = directory "#{ls[:instance_dir]}/#{ldir}" do
         action :create
-        mode '0755'
+        mode '0775'
         owner ls[:user]
         group ls[:group]
       end
